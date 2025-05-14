@@ -10,6 +10,10 @@ export const addPublication = async(req, res) =>{
 
         let picturePublication = req.file ? req.file.filename : null
 
+        if(data.author === ""){
+            data.author = "Anonimus"
+        }
+
         const addPublication = await Publication.create({
             ...data,
             media: picturePublication,

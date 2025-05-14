@@ -5,7 +5,7 @@ const coursesModel = new Schema({
         type: String,
         required: true
     },
-    desciption:{
+    description:{
         type: String,
         required: true,
         maxLength: 54

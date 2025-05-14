@@ -7,7 +7,7 @@ const router = Router()
 
 router.post(
     "/newPublication",
-    uploadPublicationsMedia.single("profilePicture"),
+    uploadPublicationsMedia.single("mediaPublication"),
     deleteFileOnError,
     addPublication
 )
