@@ -5,6 +5,7 @@ import morgan from "morgan"
 import { dbConnection } from "./mongo.js"
 
 import coursesRoutes from "../src/courses/coursesRoutes.js"
+import publicationsRoutes from "../src/publications/publicationsRoutes.js"
 
 
 const middlewares = (app) =>{
@@ -18,6 +19,7 @@ const middlewares = (app) =>{
 
 const routes = (app) =>{
     app.use("/Blog_Personal/Courses", coursesRoutes)
+    app.use("/Blog_Personal/Publications", publicationsRoutes)
 }
 
 const conectDB = async() =>{

@@ -9,7 +9,7 @@ router.post(
 )
 
 router.put(
-    "/editCourse",
+    "/editCourse/:id",
     editCourses
 )
 
@@ -19,7 +19,7 @@ router.post(
 )
 
 router.delete(
-    "/deleteCourse",
+    "/deleteCourse/:id",
     deleteCourses
 )
 
