@@ -4,6 +4,7 @@ import helmet from "helmet"
 import morgan from "morgan"
 import { dbConnection } from "./mongo.js"
 
+import coursesRoutes from "../src/courses/coursesRoutes.js"
 
 
 const middlewares = (app) =>{
@@ -16,7 +17,7 @@ const middlewares = (app) =>{
 }
 
 const routes = (app) =>{
-    app.use("")
+    app.use("/Blog_Personal/Courses", coursesRoutes)
 }
 
 const conectDB = async() =>{
@@ -35,7 +36,7 @@ export const initServer = async() =>{
     try {
         middlewares(app)
         conectDB()
-        //routes(app)
+        routes(app)
         app.listen(Port)
         console.log(`SERVER INIT IN PORT ${Port}`)
     } catch (e) {
