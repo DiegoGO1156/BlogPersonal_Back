@@ -13,7 +13,7 @@ router.put(
     editCourses
 )
 
-router.post(
+router.get(
     "/",
     listCourses
 )

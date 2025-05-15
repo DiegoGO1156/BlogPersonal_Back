@@ -6,6 +6,7 @@ import { dbConnection } from "./mongo.js"
 
 import coursesRoutes from "../src/courses/coursesRoutes.js"
 import publicationsRoutes from "../src/publications/publicationsRoutes.js"
+import commentsRoutes from "../src/comments/commentsRoutes.js"
 
 
 const middlewares = (app) =>{
@@ -20,6 +21,7 @@ const middlewares = (app) =>{
 const routes = (app) =>{
     app.use("/Blog_Personal/Courses", coursesRoutes)
     app.use("/Blog_Personal/Publications", publicationsRoutes)
+    app.use("/Blog_Personal/Comments", commentsRoutes)
 }
 
 const conectDB = async() =>{

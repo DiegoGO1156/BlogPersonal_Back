@@ -57,7 +57,7 @@ export const listPublications = async(req, res) =>{
     try {
         const [total, publications] = await Promise.all([
             Publication.countDocuments(query),
-            Publication.find(query).skip(Number(desde)).limit(Number(limite)).populate("courseName", "course")
+            Publication.find(query).skip(Number(desde)).limit(Number(limite)).populate("course", "courseName")
         ])
 
         return res.status(200).json({

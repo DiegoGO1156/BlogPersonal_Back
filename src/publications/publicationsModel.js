@@ -10,13 +10,13 @@ const publicationModel = new Schema({
         type: String,
         required: true,
         minLength: 10,
-        maxLength: 50
+        maxLength: 80
     },
     bodyPublication:{
         type: String,
         required: true,
         minLength: 20,
-        maxLength: 150
+        maxLength: 250
     },
     media:{
         type: String
