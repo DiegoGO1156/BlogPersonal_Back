@@ -37,7 +37,7 @@ export const deletePublication = async(req, res) =>{
     try {
         const { id } = req.params
 
-        await Publication.findByIdAndDelete(id)
+        await Publication.findByIdAndUpdate(id, {status: false}, {new: true})
 
         return res.status(200).json({
             msg: "Publicación eliminada con exito!"

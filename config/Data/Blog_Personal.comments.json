@@ -1,0 +1,51 @@
+[{
+  "_id": {
+    "$oid": "6826a54b930644a6a16f3f95"
+  },
+  "comment": "Lo que dices puede tener algo cierto pero aun no hay algo que verifique lo que dices",
+  "author": "Anonimus",
+  "publication": {
+    "$oid": "682698a87ba31b79a7214928"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-16T02:39:07.606Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T02:39:07.606Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6826b6bc8f14f7c6b1a217fe"
+  },
+  "comment": "Tiene mucha razón la publicacion porque por eso se usa mucho la fisica en la quimica",
+  "author": "Anonimus",
+  "publication": {
+    "$oid": "6826b5d88f14f7c6b1a217f5"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-16T03:53:32.901Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T03:53:32.901Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6826b73b8f14f7c6b1a21803"
+  },
+  "comment": "En parte es verdad porque después uno puede seguir lo que quiere en la Universidad",
+  "author": "Esteban",
+  "publication": {
+    "$oid": "6826b62a8f14f7c6b1a217fa"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-16T03:55:39.027Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T03:55:39.027Z"
+  }
+}]

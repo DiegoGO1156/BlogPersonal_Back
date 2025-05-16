@@ -1,0 +1,56 @@
+[{
+  "_id": {
+    "$oid": "682516c9dc2105ae129c61be"
+  },
+  "courseName": "Matematicas",
+  "description": "Curso dedicado al curso de matematicas",
+  "status": false,
+  "createdAt": {
+    "$date": "2025-05-14T22:18:49.967Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T03:11:17.931Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "682697ad4cd4d1bb9dc3f525"
+  },
+  "courseName": "Inglés",
+  "description": "Curso dedicado al inglés y como mejorarlo",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-16T01:41:01.802Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T01:41:01.802Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6826b506086d1972f2204e25"
+  },
+  "courseName": "Física",
+  "description": "Curso dedicado a la fisica",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-16T03:46:14.416Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T03:46:14.416Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6826b521086d1972f2204e28"
+  },
+  "courseName": "Taller",
+  "description": "Curso dedicado al area de Taller técnico",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-16T03:46:41.750Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T03:46:41.750Z"
+  }
+}]

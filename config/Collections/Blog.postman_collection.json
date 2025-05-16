@@ -1,0 +1,307 @@
+{
+	"info": {
+		"_postman_id": "297c78d2-72c9-4f86-834f-d776a310f93e",
+		"name": "Blog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42566205"
+	},
+	"item": [
+		{
+			"name": "Course",
+			"item": [
+				{
+					"name": "New Course",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"courseName\": \"Inglés\",\r\n     \"description\": \"Curso dedicado al inglés y como mejorarlo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Blog_Personal/Courses/newCourse",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Blog_Personal",
+								"Courses",
+								"newCourse"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Courses",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"courseName\": \"Matematicas\",\r\n     \"description\": \"Curso dedicado al curso de matematicas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Blog_Personal/Courses/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Blog_Personal",
+								"Courses",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Course",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"courseName\": \"Matematicas\",\r\n     \"description\": \"Curso dedicado al curso de matematicas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Blog_Personal/Courses/deleteCourse/682516c9dc2105ae129c61be",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Blog_Personal",
+								"Courses",
+								"deleteCourse",
+								"682516c9dc2105ae129c61be"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Publications",
+			"item": [
+				{
+					"name": "New Publication",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"author\": \"Diego\",\r\n    \"title\": \"Aprender inglés es importante actualmente\",\r\n    \"course\": \"Inglés\",\r\n    \"bodyPublication\": \"El inglés es un idioma indispensable actualmente y es necesario aprenderlo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Blog_Personal/Publications/newPublication",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Blog_Personal",
+								"Publications",
+								"newPublication"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Publications",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"author\": \"\",\r\n    \"title\": \"Las matematicas son dificiles\",\r\n    \"course\": \"Matematicas\",\r\n    \"bodyPublication\": \"El pensar así solo nos hace más dificil aprender matematicas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Blog_Personal/Publications/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Blog_Personal",
+								"Publications",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Publication",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"author\": \"\",\r\n    \"title\": \"Las matematicas son dificiles\",\r\n    \"course\": \"Matematicas\",\r\n    \"bodyPublication\": \"El pensar así solo nos hace más dificil aprender matematicas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Blog_Personal/Publications/deletePublication/682698ff7ba31b79a7214931",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Blog_Personal",
+								"Publications",
+								"deletePublication",
+								"682698ff7ba31b79a7214931"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comments",
+			"item": [
+				{
+					"name": "New Comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"comment\": \"Lo que dices puede tener algo cierto pero aun no hay algo que verifique lo que dices\",\r\n    \"publication\": \"Las matematicas son dificiles\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Blog_Personal/Comments/newComment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Blog_Personal",
+								"Comments",
+								"newComment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Comments",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"comment\": \"Lo que dices puede tener algo cierto pero aun no hay algo que verifique lo que dices\",\r\n    \"publication\": \"Las matematicas son dificiles\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Blog_Personal/Comments/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Blog_Personal",
+								"Comments",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Comment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"comment\": \"Lo que dices puede tener algo cierto pero aun no hay algo que verifique lo que dices\",\r\n    \"publication\": \"Las matematicas son dificiles\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Blog_Personal/Comments/deleteComment/6825632c8e61473e746f7be6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Blog_Personal",
+								"Comments",
+								"deleteComment",
+								"6825632c8e61473e746f7be6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

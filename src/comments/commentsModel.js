@@ -7,6 +7,10 @@ const commentModel = new Schema({
         maxLength: 140,
         required: true
     },
+    author:{
+        type: String,
+        default: "Anonimus"
+    },
     publication:{
         type: Schema.Types.ObjectId,
         ref: "Publication",

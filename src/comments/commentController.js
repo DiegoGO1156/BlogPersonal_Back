@@ -8,6 +8,10 @@ export const addComment = async(req, res) =>{
 
         const findPublication = await Publication.findOne({title: data.publication})
 
+        if(data.author === ""){
+            data.author = "Anonimus"
+        }
+
         const newComment = await Comment.create({
             ...data,
             publication: findPublication
@@ -50,7 +54,7 @@ export const listCommentTitle = async(req, res) =>{
         const query = {status: true}
         const {desde = 0} = req.query
         
-        const list = await Comment.find(query).skip(Number(desde)).populate("title", "publication")
+        const list = await Comment.find(query).skip(Number(desde)).populate("publication", "title")
         const total = await Comment.countDocuments(query)
 
         return res.status(200).json({

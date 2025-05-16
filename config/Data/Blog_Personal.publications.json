@@ -1,0 +1,76 @@
+[{
+  "_id": {
+    "$oid": "682698ff7ba31b79a7214931"
+  },
+  "author": "Diego",
+  "title": "Aprender inglés es importante actualmente",
+  "bodyPublication": "El inglés es un idioma indispensable actualmente y es necesario aprenderlo",
+  "media": null,
+  "status": false,
+  "course": {
+    "$oid": "682697ad4cd4d1bb9dc3f525"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T01:46:39.911Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T03:41:08.374Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6826b565086d1972f2204e31"
+  },
+  "author": "Anonimus",
+  "title": "El ingles es indispensable laboralmente",
+  "bodyPublication": "El inglés es un idioma muy requerido en las empresas por ser un idioma comercial",
+  "media": null,
+  "status": true,
+  "course": {
+    "$oid": "682697ad4cd4d1bb9dc3f525"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T03:47:49.814Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T03:47:49.814Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6826b5d88f14f7c6b1a217f5"
+  },
+  "author": "Anonimus",
+  "title": "La fisica, la ciencia que estudia los fenomenos fisicos",
+  "bodyPublication": "La fisica es la ciencia que se encarga de estudiar aquellos fenomenos que tienen que ver con la fisica",
+  "media": null,
+  "status": true,
+  "course": {
+    "$oid": "6826b506086d1972f2204e25"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T03:49:44.748Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T03:49:44.748Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6826b62a8f14f7c6b1a217fa"
+  },
+  "author": "Diego",
+  "title": "Taller es el area mas importante en una carrera",
+  "bodyPublication": "Taller es un area muy importante porque es lo que uno debe estudiar para poder seguir con la carrera que desea",
+  "media": null,
+  "status": true,
+  "course": {
+    "$oid": "6826b521086d1972f2204e28"
+  },
+  "createdAt": {
+    "$date": "2025-05-16T03:51:06.226Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T03:51:06.226Z"
+  }
+}]
