@@ -31,3 +31,4 @@ const createMulterConfig = (destinationPath) =>{
 }
 
 export const uploadPublicationsMedia = createMulterConfig("../public/uploads/media_Publications");
+export const uploadCourseMedia = createMulterConfig("../public/uploads/media_Courses");

@@ -13,6 +13,9 @@ const coursesModel = new Schema({
     status:{
         type: Boolean,
         default: true
+    },
+    media:{
+        type: String
     }
 },
     {

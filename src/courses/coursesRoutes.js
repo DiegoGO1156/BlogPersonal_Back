@@ -1,12 +1,16 @@
 import { Router } from "express";
 import { addCourse, deleteCourses, editCourses, listCourses } from "./coursesController.js";
 import { validatorDeleteCourse, validatorRegisterCourse, validatorUpdateCourse } from "../middlewares/course-validator.js";
+import { uploadPublicationsMedia } from "../middlewares/multer-Upload.js";
+import { deleteFileOnError } from "../middlewares/delete-On-Error.js";
 
 const router = Router()
 
 router.post(
     "/newCourse",
     validatorRegisterCourse,
+    uploadPublicationsMedia.single("mediaCourse"),
+    deleteFileOnError,
     addCourse
 )
 
