@@ -9,7 +9,7 @@ const commentModel = new Schema({
     },
     author:{
         type: String,
-        default: "Anonimus"
+        default: "Anonimo"
     },
     publication:{
         type: Schema.Types.ObjectId,

@@ -7,7 +7,7 @@ const router = Router()
 
 router.post(
     "/newComment",
-    validatorComment,
+    //validatorComment,
     addComment
 )
 

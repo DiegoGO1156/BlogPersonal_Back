@@ -4,7 +4,7 @@ import { Schema, model } from "mongoose";
 const publicationModel = new Schema({
     author:{
         type: String,
-        default: "Anonimus"
+        default: "Anonimo"
     },
     title:{
         type: String,

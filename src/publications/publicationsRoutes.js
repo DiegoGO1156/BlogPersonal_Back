@@ -1,15 +1,15 @@
 import { Router } from "express";
-import { addPublication, deletePublication, listPublications } from "./publicationsController.js";
+import { addPublication, deletePublication, listPublications, listPublicationById } from "./publicationsController.js";
 import { uploadPublicationsMedia } from "../middlewares/multer-Upload.js";
 import { deleteFileOnError } from "../middlewares/delete-On-Error.js"
-import { validatorDeletePublication, validatorPublication } from "../middlewares/publication-validator.js";
+import { validatorDeletePublication } from "../middlewares/publication-validator.js";
 
 const router = Router()
 
 router.post(
     "/newPublication",
-    validatorPublication,
-    uploadPublicationsMedia.single("mediaPublication"),
+    //validatorPublication,
+    uploadPublicationsMedia.single("media"),
     deleteFileOnError,
     addPublication
 )
@@ -17,6 +17,11 @@ router.post(
 router.get(
     "/",
     listPublications
+)
+
+router.get(
+    "/:id",
+    listPublicationById
 )
 
 router.delete(
