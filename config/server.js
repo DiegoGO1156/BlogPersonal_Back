@@ -8,21 +8,29 @@ import coursesRoutes from "../src/courses/coursesRoutes.js"
 import publicationsRoutes from "../src/publications/publicationsRoutes.js"
 import commentsRoutes from "../src/comments/commentsRoutes.js"
 
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-const middlewares = (app) =>{
-    app.use(express.urlencoded({extended: false}))
-    app.use(cors())
-    app.use(express.json())
-    app.use(helmet())
-    app.use(morgan("dev"))
-    //app.use(limiter)
-}
+// Obtener __dirname en ES Modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-const routes = (app) =>{
-    app.use("/Blog_Personal/Courses", coursesRoutes)
-    app.use("/Blog_Personal/Publications", publicationsRoutes)
-    app.use("/Blog_Personal/Comments", commentsRoutes)
-}
+
+const middlewares = (app) => {
+    app.use(express.urlencoded({ extended: false }));
+    app.use(cors());
+    app.use(express.json());
+    app.use(helmet());
+    app.use(morgan("dev"));
+    app.use('/uploads/media_Publications', express.static(path.join(__dirname, '../src/public/uploads/media_Publications')));
+};
+
+const routes = (app) => {
+    app.use('/uploads/media_Publications', express.static(path.join(__dirname, '../src/public/uploads/media_Publications')));
+    app.use("/Blog_Personal/Courses", coursesRoutes);
+    app.use("/Blog_Personal/Publications", publicationsRoutes);
+    app.use("/Blog_Personal/Comments", commentsRoutes);
+};
 
 const conectDB = async() =>{
     try {
