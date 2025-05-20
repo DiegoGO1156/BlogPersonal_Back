@@ -1,6 +1,6 @@
 import { Router } from "express";
-import { addComment, deleteComment, listCommentTitle } from "./commentController.js";
-import { validatorComment, validatorDeleteComment } from "../middlewares/comment-validator.js";
+import { addComment, deleteComment, editComment, listCommentTitle } from "./commentController.js";
+//import { validatorComment, validatorDeleteComment } from "../middlewares/comment-validator.js";
 
 
 const router = Router()
@@ -11,9 +11,14 @@ router.post(
     addComment
 )
 
+router.put(
+    "/editComment/:id",
+    editComment
+)
+
 router.delete(
     "/deleteComment/:id",
-    validatorDeleteComment,
+    //validatorDeleteComment,
     deleteComment
 )
 

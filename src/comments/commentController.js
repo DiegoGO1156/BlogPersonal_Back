@@ -49,6 +49,27 @@ export const deleteComment = async(req, res) =>{
     }
 }
 
+export const editComment = async(req, res) =>{
+    try {
+        
+        const { id } = req.params
+        const {comment} = req.body
+
+        const editedComment = await Comment.findByIdAndUpdate(id, {comment}, {new: true})
+
+        return res.status(200).json({
+            msg: "Comentario editado con exito!",
+            editedComment
+        })
+
+    } catch (err) {
+        return res.status(500).json({
+            success: false,
+            error: err.message
+        })
+    }
+}
+
 export const listCommentTitle = async(req, res) =>{
     try {
         const { title, desde = 0, limite = 50 } = req.query; 
